@@ -13,6 +13,5 @@ runCommand("pwd", cwd = Some("test"))
 
 In build.sbt or somewhere in the project directory :
 ```
-libraryDependencies += "tbje" %%% "sn-shell" % "0.1-SNAPSHOT"
+libraryDependencies += "com.github.tbje" %%% "sn-shell" % "0.1-SNAPSHOT"
 ```
-

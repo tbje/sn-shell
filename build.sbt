@@ -1,6 +1,6 @@
 scalaVersion := "2.11.11"
 
-organization := "tbje"
+organization := "com.github.tbje"
 
 libraryDependencies += "com.lihaoyi" %%% "utest" % "0.5.3" % "test"
 
