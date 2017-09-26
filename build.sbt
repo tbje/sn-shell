@@ -2,15 +2,15 @@ scalaVersion := "2.11.11"
 
 organization := "com.github.tbje"
 
-testFrameworks += new TestFramework("utest.runner.Framework")
-
-nativeLinkStubs := true
-
 enablePlugins(ScalaNativePlugin)
 
 addCommandAlias("prep", ";publishLocal;cleanCache")
 
-libraryDependencies := Seq(
+testFrameworks += new TestFramework("utest.runner.Framework")
+
+nativeLinkStubs := true
+
+libraryDependencies ++= Seq(
   "com.lihaoyi" %%% "utest" % "0.5.3" % "test"
 )
 
